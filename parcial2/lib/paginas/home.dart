@@ -70,7 +70,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                     Icons.search,
                     color: Colors.blue,
                   ),
-                  hintText: "Busqueda de todo tipo de cosaas",
+                  hintText: "Busqueda",
                   hintStyle: TextStyle(color: Colors.blue)),
               style: TextStyle(
                 color: Colors.white,
