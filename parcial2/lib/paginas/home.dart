@@ -19,8 +19,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        leadingWidth: 100,
+        backgroundColor: Colors.black,
         title: MostrarAppBar(),
       ),
       body: BodyParcial(),
@@ -30,9 +29,10 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
   Widget MostrarAppBar() {
     return AppBar(
       backgroundColor: Colors.black,
+      leadingWidth: 100,
       elevation: 0,
       title: Padding(
-        padding: const EdgeInsets.only(left: 0, right: 10),
+        padding: const EdgeInsets.only(left: 0, right: 0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -54,7 +54,6 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
           ],
         ),
       ),
-      leadingWidth: 100,
     );
   }
 
@@ -107,7 +106,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                                   fontSize: 15,
                                   color: activoMenu1 == index
                                       ? Colors.blue
-                                      : Colors.grey,
+                                      : Color.fromARGB(255, 7, 62, 107),
                                   fontWeight: FontWeight.w600),
                             ),
                             SizedBox(
@@ -234,7 +233,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                   padding: const EdgeInsets.only(right: 1),
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.push(
+                      /*Navigator.push(
                           context,
                           PageTransition(
                               alignment: Alignment.bottomCenter,
@@ -243,7 +242,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                                 description: sillas[index]['description'],
                                 img: sillas[index]['img'],
                               ),
-                              type: PageTransitionType.scale));
+                              type: PageTransitionType.scale));*/
                     },
                     child: Column(
                       children: [
